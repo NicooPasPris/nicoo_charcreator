@@ -1,6 +1,8 @@
 # nicoo_charcreator
 Fivem Character Creator
 
+[demo of script](https://www.youtube.com/watch?v=pv_06-KRCCs)
+
 ## Requirements
 
 • [skinchanger](https://github.com/esx-framework/skinchanger)
