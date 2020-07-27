@@ -17,17 +17,17 @@ PanelVisage = {
         enable = false,
         x = 0.5,
         y = 0.5,
-        Top = 'Haut',
-        Bottom = 'Bas',
-        Left = 'Gauche',
-        Right = 'Droite',
+        Top = Locales[Config.Locale]['top'],
+        Bottom = Locales[Config.Locale]['bottom'],
+        Left = Locales[Config.Locale]['left'],
+        Right = Locales[Config.Locale]['right'],
     },
 
     Horizontal = {
         enable = false,
         x = 0.5,
-        Left = 'Gauche',
-        Right = 'Droite',
+        Left = Locales[Config.Locale]['left'],
+        Right = Locales[Config.Locale]['right'],
     },
 
     Colour = {
@@ -36,7 +36,7 @@ PanelVisage = {
         itemIndex = 1,
         index_one = 1,
         index_two = 1,
-        name = 'Couleur',
+        name = Locales[Config.Locale]['colour'],
     },
 
     Percentage = {
@@ -44,7 +44,7 @@ PanelVisage = {
         index = 1,
         itemIndex = 1,
         MinText = '0%',
-        HeaderText = 'Taille',
+        HeaderText = Locales[Config.Locale]['height'],
         MaxText = '100%'
     }
 
@@ -175,73 +175,73 @@ Citizen.CreateThread(function()
             RageUI.DrawContent({ header = true, glare = true, instructionalButton = true }, function()
                 RageUI.Button(Locales[Config.Locale]['nose'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {5, 1, 'nez'}, 'Haut', 'Bas', 'Étroit', 'Large')
+                        updatePanel('Square', {5, 1, 'nez'}, Locales[Config.Locale]['top'], Locales[Config.Locale]['bottom'], Locales[Config.Locale]['narrow'], Locales[Config.Locale]['large'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['profil_nose'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {6, 4, 'profil_nez'}, 'Courbé', 'Incurvé', 'Court', 'Long')
+                        updatePanel('Square', {6, 4, 'profil_nez'}, Locales[Config.Locale]['curve'], Locales[Config.Locale]['curved'], Locales[Config.Locale]['short'], Locales[Config.Locale]['long'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['pointe_nose'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {2, 3, 'pointe_nez'}, 'Cassé à gauche', 'Cassé à droite', 'Pointe Haute', 'Pointe Basse')
+                        updatePanel('Square', {2, 3, 'pointe_nez'}, Locales[Config.Locale]['broke_left'], Locales[Config.Locale]['broke_right'], Locales[Config.Locale]['peak_high'], Locales[Config.Locale]['peak_low'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['eyebrows'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {7, 8, 'sourcil'}, 'Haut', 'Bas', 'Dans', 'En dehors')
+                        updatePanel('Square', {7, 8, 'sourcil'}, Locales[Config.Locale]['top'], Locales[Config.Locale]['bottom'], Locales[Config.Locale]['retracted'], Locales[Config.Locale]['out'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['cheekbones'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {9, 10, 'pommettes'}, 'Haut', 'Bas', 'Dans', 'En dehors')
+                        updatePanel('Square', {9, 10, 'pommettes'}, Locales[Config.Locale]['top'], Locales[Config.Locale]['bottom'], Locales[Config.Locale]['retracted'], Locales[Config.Locale]['out'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['cheek'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Horizontal', {13, 'joues'}, 'Creuse', 'Gonflées', {Min = -2.0, Max = 2.0})
+                        updatePanel('Horizontal', {13, 'joues'}, Locales[Config.Locale]['dig'], Locales[Config.Locale]['inflate'], {Min = -2.0, Max = 2.0})
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['eyes'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Horizontal', {11, 'yeux'}, 'Ouverts', 'Plissés', {Min = -2.0, Max = 1.0})
+                        updatePanel('Horizontal', {11, 'yeux'}, Locales[Config.Locale]['opened_eyes'], Locales[Config.Locale]['narrowed_eyes'], {Min = -2.0, Max = 1.0})
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['lips'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Horizontal', {12, 'levres'}, 'Épaisses', 'Minces', {Min = -2.0, Max = 2.0})
+                        updatePanel('Horizontal', {12, 'levres'}, Locales[Config.Locale]['thick'], Locales[Config.Locale]['thin'], {Min = -2.0, Max = 2.0})
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['jaw'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {14, 15, 'machoire'},'Large', 'Carrée', 'Étroite', 'Ronde')
+                        updatePanel('Square', {14, 15, 'machoire'}, Locales[Config.Locale]['large'], Locales[Config.Locale]['square'], Locales[Config.Locale]['narrow'], Locales[Config.Locale]['round'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['profil_chin'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {16, 17, 'profil_menton'}, 'Dans', 'En dehors', 'Bas', 'Haut')
+                        updatePanel('Square', {16, 17, 'profil_menton'}, Locales[Config.Locale]['retracted'], Locales[Config.Locale]['out'], Locales[Config.Locale]['bottom'], Locales[Config.Locale]['top'])
                     end 
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['shape_chin'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Square', {20, 18, 'forme_menton'}, 'Arrondie', 'Fossette', 'Pointu', 'Carré')
+                        updatePanel('Square', {20, 18, 'forme_menton'}, Locales[Config.Locale]['rounded'], Locales[Config.Locale]['dimple'], Locales[Config.Locale]['sharp'], Locales[Config.Locale]['square'])
                     end
                 end)
 
                 RageUI.Button(Locales[Config.Locale]['neck_thickness'], false, {}, true, function(Hovered, Active, Selected)
                     if Active then
-                        updatePanel('Horizontal', {19, 'cou'}, 'Mince', 'Gros')
+                        updatePanel('Horizontal', {19, 'cou'}, Locales[Config.Locale]['thin'], Locales[Config.Locale]['large'])
                     end 
                 end)
             end, function()
