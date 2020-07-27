@@ -23,9 +23,3 @@ client_scripts {
     'messages.lua',
     'client/*.lua'
 }
-
-server_scripts {
-    'config.lua',
-    'messages.lua',
-    'server/*.lua',
-}
