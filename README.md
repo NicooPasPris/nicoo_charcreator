@@ -23,6 +23,7 @@ par
 • Config skinchanger : 
 
 1. Ajoutez ce morceau de code au dessus de `function ApplySkin(skin, clothes)` (skinchanger/client/main.lua - ligne 199)
+
 `
 local Face = {[1] = 'nose_width', [2] = 'nose_peak_hight', [3] = 'nose_peak_lenght', [4] = 'nose_bone_high', [5] = 'nose_peak_lovering', [6] = 'nose_bone_twist', [7] = 'eyebrown_high', [8] = 'eyebrown_forward', [9] = 'cheeks_bone_high', [10] = 'cheeks_bone_width', [11] = 'cheeks_width', [12] = 'eyes_openning', [13] = 'lips_thickness', [14] = 'jaw_bone_width', [15] = 'jaw_bone_back_lenght', [16] = 'chimp_bone_lowering', [17] = 'chimp_bone_lenght', [18] = 'chimp_bone_width', [19] = 'chimp_hole', [20] = 'neck_thickness'}
 local HeadOverlay = {[0] = 'blemishes', [1] = 'beard', [2] = 'eyebrows', [3] = 'age', [4] = 'makeup', [5] = 'blush', [6] = 'complexion', [7] = 'sun', [8] = 'lipstick', [9] = 'moles', [10] = 'chest', [11] = 'bodyb'}
