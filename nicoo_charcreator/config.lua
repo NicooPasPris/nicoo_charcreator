@@ -1,13 +1,20 @@
 Config = {}
 
+-- Language du menu
+-- Menu language
 Config.Locale = 'fr'
 
+-- Location du spawn joueur après la création du personnage
+-- Rental of player spawn after character creation
 Config.PlayerSpawn = {x = -1042.635, y =-2745.828, z = 21.359, h = -30.0}
 
 -- Il faut a maximum 23 nom pour le père & 21 nom pour la mère
+-- You need a maximum of 23 name for the father & 21 name for the mother
 Config.FatherNamesList = {"Benjamin", "Daniel", "Joshua", "Noah", "Andrew", "Juan", "Alex", "Isaac", "Evan", "Ethan", "Vincent", "Angel", "Diego", "Adrian", "Gabriel", "Michael", "Santiago", "Kevin", "Louis", "Samuel", "Anthony", "Claude", "Niko", "John"}
 Config.MotherNamesList = {"Hannah", "Aubrey", "Jasmine", "Gisele", "Amelia", "Isabella", "Zoe", "Ava", "Camila", "Violet", "Sophia", "Evelyn", "Nicole", "Ashley", "Gracie", "Brianna", "Natalie", "Olivia", "Elizabeth", "Charlotte", "Emma", "Misty"}
 
+-- Liste des tenues
+-- List of outfits
 Config.Tenue = {
 	{
 		label = 'Vagos',
