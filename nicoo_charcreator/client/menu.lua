@@ -546,7 +546,12 @@ end
 
 function updateClothe(index)
     local clothe = Config.Tenue[index]
-    local gender = 'male'
+    local gender
+    if Character['sex'] == 0 then
+        gender = 'male'
+    else
+        gender = 'female'
+    end
 
     local playerPed = PlayerPedId()
 
