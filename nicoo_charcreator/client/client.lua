@@ -238,7 +238,7 @@ AddEventHandler('nicoo_charcreator:CharCreator', function()
     TaskPlayAnim(GetPlayerPed(-1), "mp_character_creation@customise@male_a", "intro", 1.0, 1.0, 4000, 0, 1, 0, 0, 0)
     Citizen.Wait(5000)
     Citizen.Wait(100)
-    RageUI.Visible(mainMenu, not RageUI.Visible(mainMenu))
+    RageUI.Visible(mainMenu, true)
 end)
 
 function LoadAnim(dict)
