@@ -65,6 +65,8 @@ Citizen.CreateThread(function()
     while true do
         Citizen.Wait(0)
         if RageUI.Visible(mainMenu) then
+            mainMenu.Controls.Back.Enabled = false
+
             RageUI.DrawContent({ header = true, glare = true, instructionalButton = true }, function()
                 -- Sexe
                 RageUI.List(Locales[Config.Locale]['gender_item'], {Locales[Config.Locale]['gender_male'], Locales[Config.Locale]['gender_female']}, actionIndex, Locales[Config.Locale]['gender_item_desc'], {}, true, function(Hovered, Active, Selected, Index)
@@ -77,6 +79,7 @@ Citizen.CreateThread(function()
                 RageUI.Button(Locales[Config.Locale]['heritage_item'], Locales[Config.Locale]['heritage_item_desc'], {RightBadge = 17}, true, function(Hovered, Active, Selected)
                     if Selected then
                         CreateSkinCam('face')
+			heritage.Controls.Back.Enabled = true
                     end
                  end, heritage)
 
@@ -84,6 +87,7 @@ Citizen.CreateThread(function()
                 RageUI.Button(Locales[Config.Locale]['visage_item'], Locales[Config.Locale]['visage_item_desc'],{RightBadge = 16}, true, function(Hovered, Active, Selected)
                     if Selected then
                         CreateSkinCam('face')
+			visage.Controls.Back.Enabled = true
                     end
                 end, visage)
 
@@ -91,6 +95,7 @@ Citizen.CreateThread(function()
                 RageUI.Button(Locales[Config.Locale]['apperance_item'], Locales[Config.Locale]['apperance_item_desc'],{RightBadge = 9}, true, function(Hovered, Active, Selected)
                     if Selected then
                         CreateSkinCam('face')
+			apperance.Controls.Back.Enabled = true
                     end
                 end, apperance)
 
