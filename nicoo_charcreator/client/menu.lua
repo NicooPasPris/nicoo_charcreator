@@ -547,7 +547,7 @@ end
 function updateClothe(index)
     local clothe = Config.Tenue[index]
     local gender
-    if Character['sex'] == 0 then
+    if ComponentVariation['sex'] == 0 then
         gender = 'male'
     else
         gender = 'female'
