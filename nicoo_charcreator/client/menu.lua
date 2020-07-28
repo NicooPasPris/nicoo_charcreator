@@ -331,7 +331,7 @@ Citizen.CreateThread(function()
                     RageUI.PercentagePanel(PanelVisage.Percentage.index, PanelVisage.Percentage.HeaderText, PanelVisage.Percentage.MinText, PanelVisage.Percentage.MaxText, function(Hovered, Active, Percent)
                         if Active then
                             PanelVisage.Percentage.index = Percent
-                            Apperance[PanelVisage.Percentage.itemIndex].indextwo = math.floor(Percent*10+0.0)
+                            Apperance[PanelVisage.Percentage.itemIndex].indextwo = math.floor(Percent*10)/10
                             updateApperance(PanelVisage.Percentage.itemIndex)
                         end
                     end)
