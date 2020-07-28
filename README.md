@@ -52,6 +52,8 @@ AddEventHandler('skinchanger:saveWithFiveMFunc', function(index, type, v)
 		if index == 'arms' then
 			Character[index] = v[1]
 			Character[index..'_2'] = v[2]
+		elseif index == 'sex' then
+			Character[index] = v[1]
 		else
 			Character[index..'_1'] = v[1]
 			Character[index..'_2'] = v[2]
