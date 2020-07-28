@@ -30,6 +30,17 @@ Config.Tenue = {
 				helmet = {-1, 0},
 				glasses = {0, 0}
 			},
+			female = {
+				tshirt = {0, 0},
+				torso = {0, 0},
+				decals = {0, 0},
+				arms = {1, 0},
+				pants = {0, 0},
+				shoes = {0, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {0, 0}	
+			}
 		}
 	},
 
@@ -47,6 +58,17 @@ Config.Tenue = {
 				helmet = {-1, 0},
 				glasses = {0, 0}
 			},
+			female = {
+				tshirt = {0, 0},
+				torso = {0, 0},
+				decals = {0, 0},
+				arms = {1, 0},
+				pants = {0, 0},
+				shoes = {0, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {0, 0}	
+			}
 		}
 	},
 
@@ -64,6 +86,17 @@ Config.Tenue = {
 				helmet = {-1, 0},
 				glasses = {0, 0}
 			},
+			female = {
+				tshirt = {0, 0},
+				torso = {0, 0},
+				decals = {0, 0},
+				arms = {1, 0},
+				pants = {0, 0},
+				shoes = {0, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {0, 0}	
+			}
 		}
 	},
 
@@ -81,6 +114,17 @@ Config.Tenue = {
 				helmet = {-1, 0},
 				glasses = {0, 0}
 			},
+			female = {
+				tshirt = {0, 0},
+				torso = {0, 0},
+				decals = {0, 0},
+				arms = {1, 0},
+				pants = {0, 0},
+				shoes = {0, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {0, 0}	
+			}
 		}
 	},
 }
