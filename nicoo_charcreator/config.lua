@@ -17,6 +17,33 @@ Config.MotherNamesList = {"Hannah", "Aubrey", "Jasmine", "Gisele", "Amelia", "Is
 -- List of outfits
 Config.Tenue = {
 	{
+		label = 'No clothes',
+		id = {
+			male = {
+				tshirt = {15, 0},
+				torso = {15, 0},
+				decals = {0, 0},
+				arms = {15, 0},
+				pants = {61, 4},
+				shoes = {34, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {0, 0}
+			},
+			female = {
+				tshirt = {15, 0},
+				torso = {5, 0},
+				decals = {0, 0},
+				arms = {15, 0},
+				pants = {57, 0},
+				shoes = {35, 0},
+				chain = {0, 0},
+				helmet = {-1, 0},
+				glasses = {5, 0}
+			}
+		}
+	},
+	{
 		label = 'Vagos',
 		id = {
 			male = {
@@ -31,19 +58,18 @@ Config.Tenue = {
 				glasses = {0, 0}
 			},
 			female = {
-				tshirt = {0, 0},
-				torso = {0, 0},
+				tshirt = {60, 0},
+				torso = {35, 0},
 				decals = {0, 0},
-				arms = {1, 0},
-				pants = {0, 0},
-				shoes = {0, 0},
-				chain = {0, 0},
+				arms = {5, 0},
+				pants = {3, 8},
+				shoes = {50, 0},
+				chain = {90, 0},
 				helmet = {-1, 0},
-				glasses = {0, 0}	
+				glasses = {5, 0}	
 			}
 		}
 	},
-
 	{
 		label = 'Families',
 		id = {
@@ -59,19 +85,18 @@ Config.Tenue = {
 				glasses = {0, 0}
 			},
 			female = {
-				tshirt = {0, 0},
-				torso = {0, 0},
+				tshirt = {60, 0},
+				torso = {31, 1},
 				decals = {0, 0},
-				arms = {1, 0},
-				pants = {0, 0},
-				shoes = {0, 0},
-				chain = {0, 0},
+				arms = {5, 0},
+				pants = {45, 0},
+				shoes = {1, 8},
+				chain = {36, 0},
 				helmet = {-1, 0},
-				glasses = {0, 0}	
+				glasses = {5, 0}	
 			}
 		}
 	},
-
 	{
 		label = 'Habillé pour un entretient',
 		id = {
@@ -87,19 +112,18 @@ Config.Tenue = {
 				glasses = {0, 0}
 			},
 			female = {
-				tshirt = {0, 0},
-				torso = {0, 0},
+				tshirt = {39, 0},
+				torso = {6, 4},
 				decals = {0, 0},
 				arms = {1, 0},
-				pants = {0, 0},
+				pants = {36, 2},
 				shoes = {0, 0},
-				chain = {0, 0},
+				chain = {2, 1},
 				helmet = {-1, 0},
-				glasses = {0, 0}	
+				glasses = {5, 0}	
 			}
 		}
 	},
-
 	{
 		label = 'Chic',
 		id = {
@@ -115,15 +139,15 @@ Config.Tenue = {
 				glasses = {0, 0}
 			},
 			female = {
-				tshirt = {0, 0},
-				torso = {0, 0},
+				tshirt = {28, 6},
+				torso = {66, 3},
 				decals = {0, 0},
-				arms = {1, 0},
-				pants = {0, 0},
-				shoes = {0, 0},
-				chain = {0, 0},
+				arms = {6, 0},
+				pants = {65, 1},
+				shoes = {77, 1},
+				chain = {6, 0},
 				helmet = {-1, 0},
-				glasses = {0, 0}	
+				glasses = {5, 0}
 			}
 		}
 	},
