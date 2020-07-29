@@ -386,7 +386,7 @@ function changemodel(skin)
             ComponentVariation['pants'] = {61, 4}
             SetPedComponentVariation(GetPlayerPed(-1), 6, 34, 0, 2)--shoes_1
             ComponentVariation['shoes'] = {34, 0}
-            ComponentVariation['sex'] = 0
+            ComponentVariation['sex'] = {0}
         elseif skin == "mp_f_freemode_01" then
             SetPedComponentVariation(GetPlayerPed(-1), 3, 15, 0, 2)--arm
             ComponentVariation['arms'] = {15, 0}
@@ -398,7 +398,7 @@ function changemodel(skin)
             ComponentVariation['pants'] = {57, 0}
             SetPedComponentVariation(GetPlayerPed(-1), 6, 35, 0, 2)--shoes_1
             ComponentVariation['shoes'] = {35, 0}
-            ComponentVariation['sex'] = 1
+            ComponentVariation['sex'] = {1}
         end
 
         for i=1, 20, 1 do
