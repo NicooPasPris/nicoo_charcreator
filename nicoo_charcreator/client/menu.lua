@@ -336,7 +336,7 @@ Citizen.CreateThread(function()
                     RageUI.PercentagePanel(PanelVisage.Percentage.index, PanelVisage.Percentage.HeaderText, PanelVisage.Percentage.MinText, PanelVisage.Percentage.MaxText, function(Hovered, Active, Percent)
                         if Active then
                             PanelVisage.Percentage.index = Percent
-                            Apperance[PanelVisage.Percentage.itemIndex].indextwo = math.floor(Percent*10)/10
+                            Apperance[PanelVisage.Percentage.itemIndex].indextwo = math.floor(Percent*10)
                             updateApperance(PanelVisage.Percentage.itemIndex)
                         end
                     end)
@@ -513,8 +513,8 @@ function updateApperance(id, selected, color)
             ComponentVariation[app.item] = {app.index, 0}
             SetPedComponentVariation(playerPed, app.itemID, app.index, 0, 2)
         elseif app.itemType == 'headoverlay' then
-            HeadOverlay[app.item] = {app.index, 10.0}
-            SetPedHeadOverlay(playerPed, app.itemID, app.index, 10.0)
+            HeadOverlay[app.item] = {app.index, app.indextwo}
+            SetPedHeadOverlay(playerPed, app.itemID, app.index, math.floor(app.indextwo)/10+0.0)
         elseif app.itemType == 'eye' then
             ParentData['eye_color'] = app.index
             SetPedEyeColor(playerPed, app.index, 0, 1)
@@ -527,7 +527,7 @@ function updateApperance(id, selected, color)
             SetPedComponentVariation(playerPed, app.itemID, app.index, 0, 2)
         elseif app.itemType == 'headoverlay' then
             HeadOverlay[app.item] = {app.index, app.indextwo+0.0}
-            SetPedHeadOverlay(playerPed, app.itemID, app.index, app.indextwo+0.0)
+            SetPedHeadOverlay(playerPed, app.itemID, app.index, math.floor(app.indextwo)/10+0.0)
         elseif app.itemType == 'eye' then
             ParentData['eye_color'] = app.index
             SetPedEyeColor(playerPed, app.index, 0, 1)
