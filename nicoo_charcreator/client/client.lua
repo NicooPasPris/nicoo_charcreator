@@ -116,7 +116,7 @@ Apperance = {
 		ColourPanel = true,
 	},
 	{
-		item = 'chest_hair',
+		item = 'chest',
 		List = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15 ,16},
 		index = 1,
 		indextwo = 1,
