@@ -66,8 +66,8 @@ Locales['fr'] = {
     makeup_eyes_desc = 'Changer le maquillage des yeux',
     lipstick = 'Rouge à lèvre',
     lipstick_desc = 'Modifier la couleur des lèvres',
-    chest_hair = 'Poil sur le torse',
-    chest_hair_desc = 'Changer les poils du torse',
+    chest = 'Poil sur le torse',
+    chest_desc = 'Changer les poils du torse',
     blush = 'Rougeur',
     blush_desc = 'Modifier les rougeurs',
 
@@ -175,8 +175,8 @@ Locales['en'] = {
     makeup_eyes_desc = 'Change makeup',
     lipstick = 'Lipstick',
     lipstick_desc = 'Change lip color',
-    chest_hair = 'Chest Hair',
-    chest_hair_desc = 'Change chest hair',
+    chest = 'Chest Hair',
+    chest_desc = 'Change chest hair',
     blush = 'Blush',
     blush_desc = 'Modify blush',
 
@@ -283,8 +283,8 @@ Locales['de'] = { --Translated by @Naifen-Phoxidas
     makeup_eyes_desc = 'Schminke ändern',
     lipstick = 'Lippenstift',
     lipstick_desc = 'Lippenstiftfarbe ändern',
-    chest_hair = 'Brustbehaarung',
-    chest_hair_desc = 'Brustbehaarung ändern',
+    chest = 'Brustbehaarung',
+    chest_desc = 'Brustbehaarung ändern',
     blush = 'Errötungen',
     blush_desc = 'Errötungen ändern',
 
