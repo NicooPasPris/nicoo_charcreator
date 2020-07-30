@@ -75,7 +75,9 @@ by
 		SetPedHeadBlendData(playerPed, Character['face'], Character['face'], Character['face'], Character['skin'], Character['skin'], Character['skin'], 1.0, 1.0, 1.0, true)
 	end
 	for k,v in pairs(Face) do
-		SetPedFaceFeature(playerPed, k, Character[v])
+		if Character[v] then
+			SetPedFaceFeature(playerPed, k, Character[v])
+		end
 	end
 ```
  ## Nicoo
