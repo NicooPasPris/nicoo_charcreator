@@ -17,7 +17,7 @@ local GridPanelHorizontal = {
 ---@param Callback table
 ---@return table
 ---@public
-function RageUI.GridPanelHorizontal(X, LeftText, RightText, Callback, Data)
+function RageUI.GridPanelHorizontal(X, LeftText, RightText, Callback)
     local CurrentMenu = RageUI.CurrentMenu
     if CurrentMenu ~= nil then
         if CurrentMenu() then
@@ -73,19 +73,7 @@ function RageUI.GridPanelHorizontal(X, LeftText, RightText, Callback, Data)
                 local Audio = RageUI.Settings.Audio
                 RageUI.PlaySound(Audio[Audio.Use].Slider.audioName, Audio[Audio.Use].Slider.audioRef, true)
             end
-            x = X
-            if Data then
-                min = Data.Min < 0.0 and -(Data.Min) or Data.Min
-                local variable = {[0.0] = Data.Min, [0.25] = Data.Min / 2, [0.5] = Data.Max - min, [0.75] = Data.Max / 2, [1.0] = Data.Max}
-                q = variable[1.0]/1.0
-
-                if X == 0.5 or X == 0.0 or X == 1.0 or X == 0.25 or X == 0.75 then
-                    x = variable[X]
-                else
-                    x = x * q
-                end
-            end
-            Callback(Hovered, Selected, X, x)
+            Callback(Hovered, Selected, X)
         end
     end
 end

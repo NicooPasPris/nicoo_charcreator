@@ -23,3 +23,7 @@ client_scripts {
     'messages.lua',
     'client/*.lua'
 }
+
+server_scripts {
+    'server/*.lua',
+}
