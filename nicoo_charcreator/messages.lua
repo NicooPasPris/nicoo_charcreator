@@ -111,12 +111,10 @@ Locales['fr'] = {
 Locales['en'] = {
     main_title = 'Character Creation',
     main_subtitle = 'Create your character',
-    
     gender_item = 'Gender',
-    gender_item_desc = 'Select the ~y~gender~w~ of your character',
+    gender_item_desc = 'Select the ~y~Gender~w~ of your character',
     gender_male = 'Man',
     gender_female = 'Women',
-
     heritage_title = 'Genetic Patrimony',
     heritage_subtitle = 'Change your genetic patrimony',
     heritage_item = 'Heritage',
@@ -129,7 +127,10 @@ Locales['en'] = {
     resemblance_item_desc = 'Determine which ~y~parent~w~ to inherit from.',
     skin_item = 'Skin',
     skin_item_desc = 'Determine the ~y~skin~w~ of your skin',
-
+    visage_title = 'Face',
+    visage_subtitle = 'Customize your face',
+    visage_item = 'Facial features',
+    visage_item_desc = 'Press ~y~Enter~w~ to change your face',
     nose = 'Nose',
     profil_nose = 'Nose profile',
     pointe_nose = 'Nose peak',
@@ -142,25 +143,20 @@ Locales['en'] = {
     chin = 'Chin profil',
     shape_chin = 'Chin shape',
     neck_thickness = 'Neck thickness',
-
     apperance_title = 'Appearance',
     apperence_subtitle = 'Customize your appearance',
     apperance_item = 'Character appearance',
     apperance_item_desc = 'Press ~y~Enter~w~ to change the appearance of your character.',
-
     clothe_item = 'Clothing',
     clothe_item_desc = 'Choose a ~y~outfit~w~ to reach town',
-
     confirm_item = 'Validate',
     confirm_item_desc = 'Completed creating your character',
-
     top = 'Top',
     bottom = 'Bottom',
     left = 'Left',
     right = 'Right',
     colour = 'Colour',
     opacity = 'Opacity',
-
     narrow = 'Narrow',
     large = 'Large',
     curve = 'Curve',
@@ -184,7 +180,6 @@ Locales['en'] = {
     deep = 'Deep',
     sharp = 'Sharp',
     bum = 'Bum',
-
     hair = 'Haircut',
     hair_desc = 'Change haircut and color',
     eyebrows_desc = 'Change eyebrows and color',
@@ -211,3 +206,6 @@ Locales['en'] = {
     blush = 'Blush',
     blush_desc = 'Modify blush',
 }
+
+
+
