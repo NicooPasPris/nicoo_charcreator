@@ -380,12 +380,20 @@ function Collision()
 end
 
 function Visible()
-    while enable == true do
-        Citizen.Wait(0)
-        DisableAllControlActions(0)
-        Collision()
-    end
-end
+	    while enable == true do
+	        Citizen.Wait(0)
+	        Collision()
+		DisableControlAction(0, 0, true)
+		DisableControlAction(0, 22, true)
+		DisableControlAction(0, 24, true)
+		DisableControlAction(0, 32, true)
+		DisableControlAction(0, 33, true)
+		DisableControlAction(0, 34, true)
+		DisableControlAction(0, 35, true)
+		DisableControlAction(0, 36, true)
+		DisableControlAction(0, 253, true)
+	    end
+	end
 
 -- Open Menu
 RegisterNetEvent('nicoo_charcreator:CharCreator')
